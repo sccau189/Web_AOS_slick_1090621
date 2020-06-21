@@ -1,0 +1,111 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 微軟正黑體;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(./img/背景.jpg);
+  background-size: 100px;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 50% 15% 15%;
+      grid-template-columns: 20% 50% 15% 15%;
+  padding: 30px 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  background: #ffffff55;
+  position: fixed;
+  width: 100vw;
+  border-bottom: 1px solid #00000033;
+}
+
+nav #logo {
+  color: #252525;
+  font-size: 26   px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #252525;
+}
+
+#banner img {
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#about {
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about img {
+  width: 100%;
+}
+
+#product {
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      grid-template-areas: "text pic";
+}
+
+#product img {
+  width: 100%;
+}
+
+#product *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: pic;
+}
+
+#product *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: pic;
+}
+
+#product *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: text;
+}
+
+#brand {
+  width: 45%;
+  margin: 0 auto;
+}
+
+#brand img {
+  margin: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+  padding: 30px 0;
+  color: #00000033;
+}
+/*# sourceMappingURL=style.css.map */
